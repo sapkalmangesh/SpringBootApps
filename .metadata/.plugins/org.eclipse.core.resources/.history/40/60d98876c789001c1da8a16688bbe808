@@ -1,0 +1,24 @@
+package com.mauli.ms.consumer;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import com.mauli.ms.entity.StockQuote;
+import com.mauli.ms.store.MessageStore;
+import com.mauli.ms.util.JsonUtil;
+
+@Component
+public class ConsumerService {
+	
+	@Autowired
+	private MessageStore store;
+	
+	@Autowired
+	private JsonUtil jsonUtil;
+	
+	public void readData(String message) {
+		StockQuote quote = jsonUtil.fromJson(message);
+		store.create(quote);
+	}
+
+}

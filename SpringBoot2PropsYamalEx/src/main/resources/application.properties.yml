@@ -1,0 +1,6 @@
+my:
+  app:
+     name: jdbc-oracle
+     url: jdbc-oracle-thin-localhost
+     username: system
+     password: manager

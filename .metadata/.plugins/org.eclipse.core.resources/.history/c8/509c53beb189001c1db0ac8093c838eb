@@ -1,0 +1,39 @@
+package com.mauli.ms.rest;
+
+
+import java.util.Date;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.mauli.ms.entity.StockQuote;
+import com.mauli.ms.producer.ProducerService;
+import com.mauli.ms.store.MessageStore;
+
+@RestController
+public class MyKafkaRestController {
+	
+	@Autowired
+	private MessageStore store;
+	
+	@Autowired
+	private ProducerService service;
+	
+	//1. Send data /send?code=....&up=...
+	public ResponseEntity<String> send
+					(@RequestParam String code,
+					 @RequestParam Double up)
+	{
+		StockQuote quote = new StockQuote();
+		quote.setCode(code);
+		quote.setUnitPrice(up);
+		quote.setDateTime(new Date());
+		
+	}
+	
+	
+	//2.veiw data
+
+}

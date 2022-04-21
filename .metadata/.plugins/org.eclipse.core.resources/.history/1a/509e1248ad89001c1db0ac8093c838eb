@@ -1,0 +1,5 @@
+package com.mauli.ms.producer;
+
+public class ProducerService {
+
+}

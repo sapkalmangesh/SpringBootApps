@@ -1,0 +1,5 @@
+package com.mauli.ms.consumer;
+
+public class ConsumerService {
+
+}

@@ -1,0 +1,5 @@
+package com.mauli.ms.store;
+
+public class MessageStore {
+
+}

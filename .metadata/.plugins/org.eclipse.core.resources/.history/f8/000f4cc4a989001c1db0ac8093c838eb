@@ -1,0 +1,5 @@
+package com.mauli.ms.entity;
+
+public class StockQuote {
+
+}

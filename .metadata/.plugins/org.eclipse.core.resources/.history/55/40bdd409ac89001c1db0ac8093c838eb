@@ -1,0 +1,5 @@
+package com.mauli.ms.util;
+
+public class JsonUtil {
+
+}

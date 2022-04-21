@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;com.mauli.ms.model&apos; to &apos;SpringCloudStockService/src/main/java/com.mauli.ms&apos;&#x0D;&#x0A;- Original project: &apos;SpringCloudOrderSrvUsingOpenFeign&apos;&#x0D;&#x0A;- Destination element: &apos;SpringCloudStockService/src/main/java/com.mauli.ms&apos;&#x0D;&#x0A;- Original element: &apos;SpringCloudOrderSrvUsingOpenFeign/src/main/java/com.mauli.ms.model&apos;" description="Copy package" destination="=SpringCloudStockService/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.mauli.ms" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.mauli.ms.model" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1641529259996" version="1.0"/>
+</session>
